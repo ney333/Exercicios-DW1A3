@@ -1,0 +1,44 @@
+public class Venda {
+private Integer codigo;
+private LocalDate data;
+private List<item> itens;
+
+public Venda (Integer codigo, LocalDate data, List<item> itens) {
+this.codigo = codigo;
+this.data = data;
+this.item = itens;
+}
+public List<item> getItens(){
+return itens;
+ }
+}
+
+public class Item {
+private Produto produto;
+private Integer quantidade;
+
+public Item(Produto produto, Integer quantidade) {
+this.produto = produto;
+this.quantidade = quantidade;
+}
+public Produto getProduto(){
+return produto;
+}
+public Integer getQuantidade(){
+return quantidade;
+ }
+}
+
+public class Produto{
+private String descricao;
+private Double valor;
+
+public Produto(String descricao, Double valor){
+this.descricao = descricao;
+this.valor = valor;
+public String getDescricao(){
+return descricao;
+public Double getValor(){
+return valor;
+ }
+}
